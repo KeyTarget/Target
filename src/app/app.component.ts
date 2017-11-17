@@ -5,10 +5,14 @@ import { Component } from '@angular/core';
   template: `
   <app-header></app-header>
 
-  <router-outlet></router-outlet>
+  <section class="section">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+  </section>
 
   <app-footer></app-footer>
-  
+
   `,
   styles: []
 })

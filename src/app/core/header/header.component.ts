@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item">Target</a>
+          <a routerLink="/" class="navbar-item">Target</a>
         </div>
 
         <div class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item">Search</a>
-            <a class="navbar-item">Directory</a>
-            <a class="navbar-item">Profile</a>
+            <a routerLink="/" class="navbar-item">Search</a>
+            <a routerLink="/directory" class="navbar-item">Directory</a>
+            <a routerLink="/profile" class="navbar-item">Profile</a>
             <a class="navbar-item">Logout</a>
           </div>
         </div>
