@@ -15,3 +15,9 @@ ng generate module core
 
 # Run
 ng serve --port 4200 --open
+
+#build
+ng build
+
+#launch
+npm run launch
