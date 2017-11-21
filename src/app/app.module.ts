@@ -9,6 +9,8 @@ import { AppComponent } from '@app/app.component';
 import { CoreModule } from '@app/core/core.module';
 import { PagesModule } from '@app/pages/pages.module';
 
+//import { DirectoryService } from '@app/pages/services/directory.service';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { PagesModule } from '@app/pages/pages.module';
     CoreModule,
     PagesModule,
   ],
-  providers: [],
+  //providers: [DirectoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
