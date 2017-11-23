@@ -8,8 +8,7 @@ export class DirectoryService {
   constructor(private http: HttpClient) { }
 
   getAllUsers() {
-    console.log(this.http.get('/api/posts'));
-    return this.http.get('/api/posts')
+    return this.http.get('/api/users')
     .map((res:Response) => res);
   }
 

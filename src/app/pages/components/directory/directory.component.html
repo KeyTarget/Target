@@ -5,16 +5,17 @@
       <div class="card" style="margin-bottom: 10px">
         <header class="card-header">
           <p class="card-header-title">
-            {{ user.title }}
+            {{ user.firstname }} {{ user.lastname }}
           </p>
         </header>
         <div class="card-content">
           <div class="content">
-            {{ user.body }}
+            <p>{{ user.title }}</p>
+            <p>{{ user.email }}</p>
           </div>
         </div>
         <footer class="card-footer">
-          <a href="#" class="card-footer-item">View</a>
+          <a href="profile/{{ user.id }}" class="card-footer-item">View</a>
         </footer>
       </div>
 

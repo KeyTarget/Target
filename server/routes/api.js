@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const connection = require('../db');
+
 // declare axios for making http requests
 const axios = require('axios');
 const API = 'https://jsonplaceholder.typicode.com';
@@ -8,6 +10,13 @@ const API = 'https://jsonplaceholder.typicode.com';
 /* GET api listing. */
 router.get('/', (req, res) => {
   res.send('api works');
+});
+
+// Get all users
+router.get('/users', (req, res) => {
+  connection.query('SELECT * FROM users', function(err, rows){
+    res.status(200).json(rows);
+  });
 });
 
 // Get all posts
