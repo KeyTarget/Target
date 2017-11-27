@@ -1,11 +1,11 @@
 const mysql = require('mysql');
-
+const config = require('dotenv').config().parsed;
 
 const connection = mysql.createConnection({
-  host     : '127.0.0.1',
-  user     : 'root',
-  password : '',
-  database : 'target'
+  host     : config.DB_HOST,
+  user     : config.DB_USER,
+  password : config.DB_PASS,
+  database : config.DB_NAME
 });
 
 module.exports = connection;

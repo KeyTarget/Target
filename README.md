@@ -19,7 +19,10 @@ ng g component pages/components/search
 ng g component pages/components/directory
 ng g component pages/components/profile
 ng g service pages/services/directory
-ng g module auth
+// ng g module auth
+// ng g component auth
+// ng g service auth/auth
+ng g module core/header
 
 # Reference
 Example of Angular 5
